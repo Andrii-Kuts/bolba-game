@@ -2,7 +2,7 @@ import pygame
 from player import Player
 from config import WIDTH, HEIGHT
 
-RADIUS = 20
+RADIUS = 15
 
 class Cabbage:
     def __init__(self, x, y):

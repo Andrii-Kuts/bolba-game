@@ -6,7 +6,7 @@ from scoreCounter import ScoreCounter
 
 pygame.init()
 
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
 pygame.display.set_caption("My AAA Game")
 clock = pygame.time.Clock()
 

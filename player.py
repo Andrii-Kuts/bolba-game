@@ -8,14 +8,14 @@ PLAYER_MAX_SPEED = 300
 SPRINT_SPEED = 1000
 MIN_SPEED = 0
 
-CHARACTER_SIZE = 100
-HITBOX_SIZE = 60
+CHARACTER_SIZE = 80
+HITBOX_SIZE = 0.6
 
 class Player:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.radius = HITBOX_SIZE / 2.0
+        self.radius = CHARACTER_SIZE * HITBOX_SIZE / 2.0
         self.player_velocity_x = 0
         self.player_velocity_y = 0
         self.player_direction = 0
@@ -86,8 +86,6 @@ class Player:
 
         self.player_velocity_x = vx * FPS
         self.player_velocity_y = vy * FPS
-        self.x += vx
-        self.y += vy
 
     def render(self, screen):
         bolba = self.bolba_rotated[self.player_direction]
