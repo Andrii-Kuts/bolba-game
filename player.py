@@ -84,6 +84,8 @@ class Player:
 
         vx, vy = level.handleCollisions(self, vx, vy)
 
+        self.player_velocity_x = vx * FPS
+        self.player_velocity_y = vy * FPS
         self.x += vx
         self.y += vy
 
